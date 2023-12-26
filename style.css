@@ -1,5 +1,8 @@
+body {
+  height: 100vh;
+}
 #btn {
   padding: 50px;
-  text-align: center;
+  margin: auto;
 }
 
