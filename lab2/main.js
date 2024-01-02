@@ -30,7 +30,7 @@ const task2 = function () {
 
 const task3 = function () {
   const time = +prompt('Enter the Hour of the Day');
-  if (time > 24 || time < 0) {
+  if (time > 24 || time < 0 || isNaN(time)) {
     alert('Please enter a valid time');
     return;
   }
