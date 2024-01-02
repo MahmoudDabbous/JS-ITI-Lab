@@ -28,9 +28,12 @@ const task2 = function () {
   }
 }
 
-
 const task3 = function () {
   const time = +prompt('Enter the Hour of the Day');
+  if (time > 24 || time < 0) {
+    alert('Please enter a valid time');
+    return;
+  }
 
   if (time === 0) {
     alert(`12 am`)
