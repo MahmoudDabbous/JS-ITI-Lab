@@ -162,3 +162,17 @@ console.log(sum); // Output: 10
 ```
 reduce() executes a reducer function on each element of the array, resulting in a single output value.
 
+## Nested Function and Closure
+
+```js
+function outerFunction(x) {
+   function innerFunction(y) {
+     return x + y;
+   }
+   return innerFunction;
+}
+const closure = outerFunction(5);
+console.log(closure(3)); // Output: 8
+```
+
+In this example, outerFunction defines x and declares innerFunction, which takes a parameter y and returns the sum of x + y. When outerFunction is invoked with 5, it returns innerFunction, creating a closure where x is 5. Later, invoking closure(3) uses the enclosed value of x as 5, resulting in 5 + 3 = 8. The closure maintains access to the variables of its outer function even after the outer function has finished executing, due to the lexical environment in which the closure was created.
