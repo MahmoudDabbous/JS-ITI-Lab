@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hello</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <section id="part-1" class="container">
+    <header>
+      <h1>Part 1</h1>
+    </header>
+    <section id="part-1-task-1" class="task">
+      <header>
+        <h1>Login</h1>
+      </header>
+      <form class="form" action="" method="POST" id="login">
+        <div>
+          <label for="inputUserName">User Name</label>
+          <input type="text" id="inputUserName" name="usernmae">
+        </div>
+        <div>
+          <label for="inputPassword">Password</label>
+          <input type="password" id="inputPassword" name="password">
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section id="part-1-task-2" class="task">
+      <header>
+        <h1>Calculate</h1>
+      </header>
+      <form class="form" action="" method="POST" id="calculate">
+        <div>
+          <label for="inputNumberOne">First Number</label>
+          <input required type="number" id="inputNumberOne" name="numOne">
+        </div>
+        <div>
+          <label for="inputNumberTwo">Second Number</label>
+          <input required type="number" id="inputNumberTwo" name="numTwo">
+        </div>
+        <div>
+          <label for="selection">Select Operation</label>
+          <select id="selection" name="selection">
+            <option value="sum">sum</option>
+            <option value="multi">multi</option>
+            <option value="subtract">subtract</option>
+            <option value="division">division</option>
+            <option value="moduls">moduls</option>
+          </select>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </section>
+  <section id="part-2" class="container">
+    <header>
+      <h1>Part 2</h1>
+    </header>
+    <section id="part-2-task-1" class="task">
+      <button class="btn" id="calc">Calculate Sum and Average</button>
+    </section>
+    <section  id="part-2-task-2" class="task">
+      <button class="btn" id="contact">Contact Book</button>
+    </section>
+  </section>
+  <script src="main.js"></script>
+</body>
+
+</html>
