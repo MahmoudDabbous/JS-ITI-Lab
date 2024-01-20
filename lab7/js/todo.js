@@ -9,7 +9,7 @@ function addTask() {
         return;
     }
 
-    var taskItem = document.createElement('div');
+    const taskItem = document.createElement('div');
     taskItem.className = 'task-item';
     taskItem.innerHTML = `
         <span>${taskName}</span>
@@ -24,12 +24,12 @@ function addTask() {
 }
 
 function updateTaskStatus(checkbox) {
-    var taskItem = checkbox.closest('.task-item');
+    const taskItem = checkbox.closest('.task-item');
     taskItem.classList.toggle('done', checkbox.checked);
 }
 
 function deleteTask(deleteBtn) {
-    var taskItem = deleteBtn.closest('.task-item');
+    const taskItem = deleteBtn.closest('.task-item');
     taskItem.remove();
 }
 
