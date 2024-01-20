@@ -4,7 +4,7 @@ function handleLogin(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username !== 'admin' && password !== '123') {
+    if (username !== 'admin' || password !== '123') {
         e.preventDefault();
         document.getElementById('login-message').innerText = 'Not registered.';
     }
