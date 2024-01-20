@@ -1,6 +1,8 @@
 body {
+    font-size: large;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #todo-container {
@@ -26,7 +28,7 @@ body {
 }
 
 .task-item.done {
-    background-color: #d0f0c0;
+    background-color: greenyellow;
 }
 
 .task-item .delete-btn {
