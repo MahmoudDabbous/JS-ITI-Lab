@@ -1,8 +1,8 @@
 const btn = document.getElementById('btn');
 
 function addTask() {
-    var task = document.getElementById('task-input');
-    var taskName = task.value;
+    const task = document.getElementById('task-input');
+    const taskName = task.value;
 
     if (taskName.trim() === '') {
         alert('Please enter a task name.');
@@ -17,7 +17,7 @@ function addTask() {
         <button class="delete-btn" onClick="deleteTask(this)">Delete</button>
     `;
 
-    var tasksList = document.getElementById('tasks-list');
+    const tasksList = document.getElementById('tasks-list');
     tasksList.appendChild(taskItem);
 
     task.value = '';
