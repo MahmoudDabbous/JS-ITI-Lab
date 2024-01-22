@@ -26,12 +26,6 @@ body {
 .slide {
     display: none;
     overflow: hidden;
-    width: 100%;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    height: 100px;
 }
 
 button {
@@ -47,4 +41,9 @@ button {
 .active {
     width: 50%;
     display: block;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
 }
