@@ -12,12 +12,12 @@ function updateTime() {
     document.getElementById('watch').textContent = `${hour}:${minute}:${second} ${ampm}`;
     const currentTime = `${realHour}:${minute}`;
 
-    const alarmTime = document.getElementById('alarmTime').value;
+    const alarmTime = document.getElementById('alarmTime');
     console.log(alarmTime);
 
-    if (currentTime === alarmTime) {
+    if (currentTime === alarmTime.value) {
         alert('Alarm is Up');
-        clearInterval(interval);
+        alarmTime.value = '';
     }
 }
 
