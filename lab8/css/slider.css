@@ -1,12 +1,15 @@
 body {
     height: 100vh;
+    padding: 50px;
 }
+
 .container {
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 100vh;
     gap: 1rem;
 }
 
@@ -18,23 +21,23 @@ body {
     width: 100%;
     gap: 1rem;
     font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-
 }
 
 .slide {
-    background-color:blue ;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    background-color: blue;
     color: white;
     text-align: center;
     font-weight: bold;
-    width: 16.67%;
     height: 100px;
 }
 
 button {
     border-radius: 24px;
     border-style: none;
-    box-shadow: rgba(0, 0, 0,.2) 0 3px 5px -1px, rgba(0, 0, 0,.14) 0 6px 10px 0, rgba(0, 0, 0,.12) 0 1px 18px 0;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
     color: black;
     font-size: 2rem;
     font-weight: bolder;
@@ -42,5 +45,6 @@ button {
 }
 
 .active {
-    background-color: red !important;
+    width: 50%;
+    display: block;
 }

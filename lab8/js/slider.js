@@ -1,5 +1,6 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
+const slider = document.getElementById('slider');
 const nextBtn = document.getElementById('next');
 const prevBtn = document.getElementById('prev');
 
@@ -7,7 +8,6 @@ function updateSlider(newCurrentSlide) {
     slides[currentSlide].classList.toggle('active');
     currentSlide = newCurrentSlide;
     slides[currentSlide].classList.toggle('active');
-
 }
 
 function nextSlide() {
@@ -20,6 +20,6 @@ function prevSlide() {
     updateSlider(newCurrentSlide);
 }
 
-setInterval(nextSlide, 3000); 
+setInterval(nextSlide, 3000);
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
