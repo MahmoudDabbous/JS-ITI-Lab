@@ -1,4 +1,4 @@
-function validateForm(e) {
+function validateForm() {
     var email = document.forms["form"]["email"].value;
     var password = document.forms["form"]["password"].value;
 
@@ -9,8 +9,7 @@ function validateForm(e) {
     } else {
         document.getElementById("emailErr").innerHTML = "";
     }
-    
-    // Password validation
+
     var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
     if (!passwordRegex.test(password)) {
         document.getElementById("passwordErr").innerHTML = "Password must contain at least 8 characters, including at least one lowercase letter, one uppercase letter, and one number.";
